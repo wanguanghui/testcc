@@ -2,7 +2,7 @@
 
 
 [![pypi](https://img.shields.io/pypi/v/testcc.svg)](https://pypi.org/project/testcc/)
-[![license](https://img.shields.io/github/license/wanguanghui/testcc)](https://github.com/wanguanghui/testcc/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/wanguanghui/testcc)](https://github.com/wanguanghui/testcc/blob/main/LICENSE)
 [![python](https://img.shields.io/pypi/pyversions/testcc.svg)](https://pypi.org/project/testcc/)
 [![Build Status](https://github.com/wanguanghui/testcc/actions/workflows/ci.yml/badge.svg)](https://github.com/wanguanghui/testcc/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/wanguanghui/testcc/branch/main/graphs/badge.svg)](https://codecov.io/github/wanguanghui/testcc)
