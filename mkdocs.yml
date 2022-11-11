@@ -1,0 +1,76 @@
+site_name: testcc
+site_url: https://dd.github.io/testcc
+repo_url: https://github.com/dd/testcc
+dev_addr: 127.0.0.1:8001
+repo_name: dd/testcc
+#strict: true
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - Modules: api.md
+  - Contributing: contributing.md
+  - Changelog: changelog.md
+theme:
+  name: material
+  language: en
+  #logo: assets/logo.png
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.tabs.sticky
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      linenums: false
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - admonition
+  - toc:
+      baselevel: 2
+      permalink: true
+  - meta
+plugins:
+  - include-markdown
+  - search:
+      lang: en
+  - mkdocstrings
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      # replace with your own tweet link below
+      link: https://github.com/waynerv/cookiecutter-pypackage
+      name: Tweet
+    - icon: fontawesome/brands/facebook
+      # replace with your own facebook link below
+      link: https://github.com/waynerv/cookiecutter-pypackage
+      name: Facebook
+    - icon: fontawesome/brands/github
+      link: https://github.com/dd/testcc
+      name: Github
+    - icon: material/email
+      link: "mailto:guanghui_wan@wochacha.com"
