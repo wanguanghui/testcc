@@ -32,7 +32,7 @@ jobs:
         shell: bash
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v3
 
       - name: Get Changelog Entry
         id: changelog_reader
@@ -42,7 +42,7 @@ jobs:
           version: ${{ steps.tag_name.outputs.current_version }}
           path: ./CHANGELOG.md
 
-      - uses: actions/setup-python@master
+      - uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-versions }}
 
@@ -53,7 +53,7 @@ jobs:
 
       - name: build documentation
         run: |
-          poetry install --with doc
+          poetry install --with test,dev,doc
           poetry run mkdocs build
 
       - name: publish documentation
